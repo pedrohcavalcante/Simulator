@@ -13,16 +13,14 @@ import java.io.IOException;
     		File archive = new File ("C:\\Users\\SINFO\\workspace\\Arquivo\\src"
     				+ "\\arquivo\\thunder.txt");
     		if (archive.exists()){
-    		System.out.println("File founded on system");
-    		try(BufferedReader buffer_reader = new BufferedReader(new FileReader(archive))){
-    			while ((line = buffer_reader.readLine()) != null){
-    				
-    				System.out.println(line.split(","));
-    			}
-    		} catch (IOException e) {
-				e.printStackTrace();
-			}
-    			
+	    		System.out.println("File founded on system");
+	    		try(BufferedReader buffer_reader = new BufferedReader(new FileReader(archive))){
+	    			while ((line = buffer_reader.readLine()) != null){
+	    				System.out.println(line);
+	    			}
+	    		} catch (IOException e) {
+					e.printStackTrace();
+				}
     		}
     	}
     }
