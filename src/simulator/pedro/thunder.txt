@@ -1,3 +1,5 @@
 addi $s1, $s2, $s3
 addi $s1, $s2, $s5
-subi $s2, $s4, VALOR
+addi $s1, $s2, $s5
+div $s2, $s4 
+addi $s1, $s2, $s5
