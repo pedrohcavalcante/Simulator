@@ -63,9 +63,10 @@ import java.util.ArrayList;
 	    				System.out.print("       " + op1.get(i));
 	    				System.out.print("       " + op2.get(i));
 	    				/**
-	    				 * Se instrcoes for igual àqueles que possuem três registradores
+	    				 * Se instrucoes for igual àqueles que possuem três registradores
 	    				 */
 	    				if (instrucoes.get(i).equals("addi")){
+	    					
 	    					System.out.print("       " + op3.get(i));
 	    				}
 	    				System.out.print("\n");
