@@ -14,7 +14,10 @@ import java.util.ArrayList;
     		String[] parts = null;
 
     		ArrayList<Instrucao> inst_array = new ArrayList<Instrucao>();
-    		File archive = new File ("C:\\Users\\pedri\\git\\Simulator\\src\\simulator\\pedro\\thunder.txt");
+    		// Use in home PC
+    		//File archive = new File ("C:\\Users\\pedri\\git\\Simulator\\src\\simulator\\pedro\\thunder.txt");
+    		// Use in SINFO PC
+    		File archive = new File ("C:/Users/SINFO/workspace/Simulator/src/simulator/pedro/thunder.txt");
     		
     		if (archive.exists()){
 	    		System.out.println("File founded on system");
