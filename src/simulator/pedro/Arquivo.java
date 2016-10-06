@@ -11,6 +11,7 @@ import java.util.ArrayList;
     	public static Instrucao obj;
     	public static void main(String [] args) throws FileNotFoundException{
     		String line;
+    		int aux = 0;
     		String[] parts = null;
     		ArrayList<String> instrucoes = new ArrayList<String>();
     		ArrayList<String> op1 = new ArrayList<String>();
@@ -34,12 +35,11 @@ import java.util.ArrayList;
 	    				 * Testando se o parts[0] é igual a mult ou div
 	    				 * que entra no caso de não ter o parts[3], de acordo com os 
 	    				 * exemplos que Mônica fez. 
-	    				 * 
 	    				 * Se não for igual, vai para o else que adiciona o 
 	    				 * parts[3] de acordo com a função em Intrucao.java
 	    				 */
 	    				if (parts[0].equals("mult") || parts[0].equals("div")){
-	    					obj = new Instrucao(parts[0], parts[1], parts[2]);
+	    					obj = new Instrucao(parts[0], parts[1], parts[2], null);
 		    				inst_array.add(obj);
 		    				instrucoes.add(parts[0]);
 		    				op1.add(parts[1]);
@@ -57,26 +57,29 @@ import java.util.ArrayList;
 	    			/**
 	    			 * Impressão dos operadores. 
 	    			 */
-	    			System.out.println("Operação | Destino | Fonte1 | Fonte2");
+	    			System.out.println("                Operação | Destino | Fonte1 | Fonte2");
 	    			for (int i = 0; i < inst_array.size(); i++){
+	    				System.out.print("Valor de i = "+ i + "|  ");
 	    				System.out.print(instrucoes.get(i));
 	    				System.out.print("       " + op1.get(i));
 	    				System.out.print("       " + op2.get(i));
+	    				//System.out.print("       " + op3.get(i));
 	    				/**
 	    				 * Se instrucoes for igual àqueles que possuem três registradores
 	    				 */
 	    				if (instrucoes.get(i).equals("addi")){
-	    					
+	    					//System.out.print("\n" + instrucoes.size());
 	    					System.out.print("       " + op3.get(i));
+	    					aux++;
 	    				}
+	    				
 	    				System.out.print("\n");
 	    				
-	    				
 	    			}
+	    			System.out.print(op3.get(3));
 	    		} catch (IOException e) {
 					e.printStackTrace();
 				}
     		}
-    		
     	}
     }

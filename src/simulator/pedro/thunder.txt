@@ -1,6 +1,6 @@
 addi $s1, $s2, $s3
-addi $s1, $s2, $s5
-addi $s1, $s2, $s5
-div $s2, $s4 
-addi $s1, $s2, $s5
-addi $s1, $s2, $s5
+addi $s4, $s5, $s6
+div $s7, $s8
+addi $s9, $s10, $s11
+div $s12, $s13
+addi $s14, $s15, $s16
